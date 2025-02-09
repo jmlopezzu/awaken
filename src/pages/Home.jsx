@@ -17,32 +17,32 @@ import { FiBox } from "react-icons/fi";
 export default function AwakenPage() {
   const actividades = [
     {
-      icon: <GiWeightLiftingUp className="w-12 h-12" />,
+      icon: <GiWeightLiftingUp className="w-12 h-12 text-red-600" />,
       title: "Entrenamiento de Pesas",
       desc: "Fortalece tu cuerpo y construye músculo con nuestras rutinas personalizadas.",
     },
     {
-      icon: <GiRunningShoe className="w-12 h-12" />,
+      icon: <GiRunningShoe className="w-12 h-12 text-red-600" />,
       title: "Running",
       desc: "Mejora tu resistencia y velocidad con nuestros programas de running.",
     },
     {
-      icon: <TbYoga className="w-12 h-12" />,
+      icon: <TbYoga className="w-12 h-12 text-red-600" />,
       title: "Yoga",
       desc: "Encuentra equilibrio y paz interior con nuestras clases de yoga.",
     },
     {
-      icon: <GiMountainClimbing className="w-12 h-12" />,
+      icon: <GiMountainClimbing className="w-12 h-12 text-red-600" />,
       title: "Caminatas en Montaña",
       desc: "Conéctate con la naturaleza y desafía tus límites en nuestras caminatas.",
     },
     {
-      icon: <GiIceCube className="w-12 h-12" />,
+      icon: <GiIceCube className="w-12 h-12 text-red-600" />,
       title: "Inmersión en Hielo",
       desc: "Fortalece tu mente y cuerpo con la terapia de frío.",
     },
     {
-      icon: <FiBox className="w-12 h-12" />,
+      icon: <FiBox className="w-12 h-12 text-red-600" />,
       title: "Crossfit",
       desc: "Entrenamientos intensos para mejorar tu condición física.",
     },
@@ -156,10 +156,10 @@ export default function AwakenPage() {
           <h1 className="text-4xl font-bold mb-4">Despierta tu potencial</h1>
           <p className="text-lg mb-6">Combina fuerza, resistencia y paz interior con Awaken.</p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-red-600 text-white font-bold rounded-full">
+            <Button size="lg" className="bg-red-600 text-white font-bold rounded-full hover:bg-red-700">
               Únete Ahora
             </Button>
-            <Button size="lg" className="bg-red-800 text-white font-bold rounded-full">
+            <Button size="lg" className="bg-gray-800 text-white font-bold rounded-full hover:bg-gray-700">
               Conoce Más
             </Button>
           </div>
@@ -169,24 +169,25 @@ export default function AwakenPage() {
       {/* Sección de Actividades */}
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-red-600 mb-8">
+          <h2 className="text-3xl font-bold text-center text-white mb-8">
             Nuestras Actividades
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {actividades.map((actividad, index) => (
               <div
                 key={index}
-                className="bg-gray-900 p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
               >
-                <div className="text-4xl mb-4">{actividad.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{actividad.title}</h3>
+                <div className="flex justify-center mb-4">
+                  {actividad.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-white">{actividad.title}</h3>
                 <p className="text-gray-300">{actividad.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
 
       {/* Sección de Dos Columnas */}
       <section className="py-20 bg-black">
@@ -220,7 +221,7 @@ export default function AwakenPage() {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-gray-900 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                  className="p-6 bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
                   <h3 className="text-xl font-semibold text-white mb-2">
                     {feature.title}
@@ -250,7 +251,7 @@ export default function AwakenPage() {
       {/* Sección de Merchandising */}
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-red-600 mb-8">
+          <h2 className="text-3xl font-bold text-center text-white mb-8">
             Merch Awaken
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -273,7 +274,7 @@ export default function AwakenPage() {
             ].map((producto, index) => (
               <div
                 key={index}
-                className="bg-gray-900 p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
               >
                 <img
                   src={producto.image}
