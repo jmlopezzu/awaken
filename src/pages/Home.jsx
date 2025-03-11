@@ -153,7 +153,7 @@ export default function AwakenPage() {
         }}
       >
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Despierta tu potencial</h1>
+          <h1 className="text-4xl font-bold mb-4">Empieza hoy en awaken</h1>
           <p className="text-lg mb-6">Combina fuerza, resistencia y paz interior con Awaken.</p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-red-600 text-white font-bold rounded-full hover:bg-red-700">
